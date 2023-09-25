@@ -1,20 +1,21 @@
 package entities;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 import entities.enums.GeneroLivro;
 
 public class Autor {
     private String nome;
-    private Date dataNascimento;
+    private LocalDate dataNascimento;
     private GeneroLivro genero;
     
     public Autor() {
     }
     
-    public Autor(String nome, Date dataNascimento, GeneroLivro genero) {
+    public Autor(String nome, LocalDate dataNascimentoAutor1, GeneroLivro genero) {
         this.nome = nome;
-        this.dataNascimento = dataNascimento;
+        this.dataNascimento = dataNascimentoAutor1;
         this.genero = genero;
     }
 
@@ -26,11 +27,11 @@ public class Autor {
         this.nome = nome;
     }
 
-    public Date getDataNascimento() {
+    public LocalDate getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(Date dataNascimento) {
+    public void setDataNascimento(LocalDate dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 
